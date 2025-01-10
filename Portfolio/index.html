@@ -74,7 +74,7 @@
                             projets et je reste souvent à l'écoute d'autrui afin d'affiner mes connaissances et
                             réciproquement.</p>
                         <br>
-                        <a href="assets/cv/RD_CV2.pdf" style=" color:rgb(255, 0, 0)">Vous pouvez découvrir mon CV en me
+                        <a href="assets/cv/CVRomainDhem.pdf" style=" color:rgb(255, 0, 0)">Vous pouvez découvrir mon CV en me
                             cliquant desssus</a>
                     </div>
                 </div>
@@ -323,6 +323,21 @@
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">EduarToDo</div>
                             <div class="portfolio-caption-subheading text-muted">2024-2025</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal23">
+                            <div class="portfolio-hover">
+                                <div class="    "><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/binpacking2.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Binpacking</div>
+                            <div class="portfolio-caption-subheading text-muted">2023-2024</div>
                         </div>
                     </div>
                 </div>
@@ -912,35 +927,54 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">EduarToDo</h2>
-                                <p class="item-intro text-muted">Site fait avec du HTML,CSS,Javascript,PHP,SQL,Ajax</p>
+                                <p class="item-intro text-muted">Site réalisé avec HTML, CSS, JavaScript, PHP, SQL, Ajax</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/eduartodo.png" alt="..." />
-                                <p>Jeu réalisé dans le cadre de la <b>Wonder Jam de l'Automne 2024</b> par l'équipe des Tea Enjoyers.</p>
-                                    <p><b>Le résumé de notre jeu :</b> Le principe est de survivre aux fantômes appraissant dans l'obscurité en les éclairant contre un autre joueur tout en récupérant des bonus pour handicaper son opposant.
-                                        <br>
-                                    <b>Thème :</b> Dimension.
-                                    <br>
-                                    <b>Styles :</b> Chacun pour soi ; Aide moi mon pote ! ; Maniaque
-                                    <br>
-                                    <b>Styles respectés :</b> Chacun pour soi  & Maniaques 
+                                
+                                <p><b>Le projet :</b> EduarToDo est une application réalisée à l'UQAC dans le but de développer une "To-Do List" interactive et collaborative.</p>
+                                
+                                <p><b>Principe :</b> <i>EduarToDo</i> est une application permettant de gérer et de planifier ses tâches personnelles et collaboratives. 
+                                    Les utilisateurs peuvent créer des groupes, gérer des sous-tâches, organiser leurs tâches par priorité ou date limite, et suivre leur avancement grâce à un système de statuts.</p>
+                                
+                                <h4><b>Personas</b></h4>
+                                <p><b>Alexandra :</b> Architecte d'intérieur et mère de famille qui utilise l'application pour gérer efficacement ses tâches personnelles et familiales.</p>
+                                <p><b>Jean :</b> Développeur dans une startup, il se sert d'EduarToDo pour coordonner les tâches au sein de son équipe et suivre les deadlines des projets.</p>
+                                
+                                <h4><b>Fonctionnalités principales</b></h4>
+                                <ul>
+                                    <li>Créer, modifier et supprimer des tâches et sous-tâches</li>
+                                    <li>Organiser les tâches par groupes</li>
+                                    <li>Attribuer des statuts et des priorités</li>
+                                    <li>Collaborer avec d'autres utilisateurs grâce à des groupes partagés</li>
+                                    <li>Ajouter des dates de début et des deadlines aux tâches</li>
+                                    <li>Rechercher des groupes et naviguer rapidement dans l'application</li>
+                                </ul>
+                                
+                                <h4><b>Histoires utilisateurs</b></h4>
+                                <ul>
+                                    <li>En tant qu'utilisateur, je souhaite me connecter à l'application pour accéder à mes tâches.</li>
+                                    <li>En tant qu'utilisateur, je souhaite créer des groupes pour partager des tâches avec d'autres utilisateurs.</li>
+                                    <li>En tant qu'utilisateur, je souhaite trier mes tâches par priorité ou par deadline pour mieux m'organiser.</li>
+                                    <li>En tant qu'utilisateur, je souhaite valider des sous-tâches pour indiquer leur progression.</li>
+                                </ul>
+                                
+                                <h4><b>Maquette</b></h4>
+                                <p>Consultez la maquette interactive sur <a href="https://www.figma.com/proto/wv4VjRr101MnSkKxw0WkZY/EduarToDo?node-id=78-122&node-type=canvas&t=DdYyR66bQjUkPi6x-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=78%3A122&show-proto-sidebar=1">Figma</a>.</p>
+                                
+                                <h4><b>Création de la base de données</b></h4>
+                                <p>La base de données est créée avec un script SQL disponible dans le répertoire <code>data/database.sql</code>. 
+                                    Assurez-vous de configurer un utilisateur 'eduardo' avec les droits nécessaires ou de modifier les paramètres dans <code>php/inc/constants.php</code>.</p>
                                 
                                 <ul class="list-inline">
-                                    <li>
-                                        <strong>Page itchio : </strong>
-                                        <a href="https://tea-enjoyers.itch.io/doomension"> cliquer ici </a>
-                                    </li>
-                                    <li>
-                                        <i>Nombre de personnes sur le projet</i>
-                                    </li>
-                                    <li>
-                                        2
-                                    </li>
+                                    <li><strong>Page Github :</strong> <a href="https://github.com/Nunbus1/EduarToDo">Cliquer ici</a></li>
+                                    <li><i>Nombre de personnes sur le projet :</i> 4</li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+                                
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -956,33 +990,64 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Doomension</h2>
-                                <p class="item-intro text-muted">Jeu sur Unity</p>
+                                <!-- Project details -->
+                                <h2 class="text-uppercase">Suggest Of The Greatest</h2>
+                                <p class="item-intro text-muted">Jeu sur Unreal Engine</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/SOTG.png" alt="..." />
-                                <p>Jeu réalisé dans le cadre de la <b>Wonder Jam de l'Automne 2024</b> par l'équipe des Tea Enjoyers.</p>
-                                    <p><b>Le résumé de notre jeu :</b> Le principe est de survivre aux fantômes appraissant dans l'obscurité en les éclairant contre un autre joueur tout en récupérant des bonus pour handicaper son opposant.
-                                        <br>
-                                    <b>Thème :</b> Dimension.
-                                    <br>
-                                    <b>Styles :</b> Chacun pour soi ; Aide moi mon pote ! ; Maniaque
-                                    <br>
-                                    <b>Styles respectés :</b> Chacun pour soi  & Maniaques 
+                                
+                                <h4><b>Description :</b></h4>
+                                <p>
+                                    <i>Suggest Of The Greatest</i> est un jeu de tir compétitif multijoueur se déroulant dans un univers post-apocalyptique.
+                                    Les joueurs s'affrontent dans des arènes dynamiques où chaque round est l'occasion de modifier l'environnement en
+                                    ajoutant ou supprimant des éléments pour améliorer leur stratégie. Le but est de survivre et de remporter des points
+                                    en devenant le dernier joueur debout.
+                                </p>
+                                
+                                <h4><b>Concept :</b></h4>
+                                <ul>
+                                    <li><b>Genre :</b> FPS</li>
+                                    <li><b>Contexte :</b> Science-fiction / Combat pour la survie</li>
+                                    <li><b>Modes :</b> Multijoueur (2 à 4 joueurs)</li>
+                                    <li><b>Plateformes :</b> PC et consoles</li>
+                                    <li><b>Contrôles :</b> Manette et Clavier-Souris</li>
+                                </ul>
+                                
+                                <h4><b>Gameplay :</b></h4>
+                                <ul>
+                                    <li>Chaque joueur possède une arme principale et peut collecter des bonus pour améliorer ses capacités.</li>
+                                    <li>Mécaniques de mouvement : dash, saut lunaire, glissade pour éviter les tirs et gagner en mobilité.</li>
+                                    <li>Modification de la carte entre les rounds : ajout ou suppression de murs, pièges et bonus pour plus de stratégie.</li>
+                                    <li>Chronomètre pour chaque round, augmentant la tension et la dynamique du jeu.</li>
+                                </ul>
+                                
+                                <h4><b>Conditions de victoire :</b></h4>
+                                <ul>
+                                    <li>Le dernier joueur survivant gagne un point de victoire à la fin de chaque round.</li>
+                                    <li>La partie se termine lorsqu’un joueur atteint le nombre de points configuré en début de jeu.</li>
+                                </ul>
+                                
+                                <h4><b>Vidéos :</b></h4>
+                                <ul>
+                                    <li>
+                                        <strong>Trailer :</strong> 
+                                        <a href="https://youtu.be/5Y2XWP3vYmo" target="_blank">Visionner ici</a>
+                                    </li>
+                                    <li>
+                                        <strong>Présentation :</strong> 
+                                        <a href="https://youtu.be/XGGndyGXy9Q" target="_blank">Visionner ici</a>
+                                    </li>
+                                </ul>
                                 
                                 <ul class="list-inline">
                                     <li>
-                                        <strong>Page itchio : </strong>
-                                        <a href="https://tea-enjoyers.itch.io/doomension"> cliquer ici </a>
+                                        <i>Nombre de personnes sur le projet :</i>
                                     </li>
                                     <li>
-                                        <i>Nombre de personnes sur le projet</i>
-                                    </li>
-                                    <li>
-                                        2
+                                        5
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+                                
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -1003,32 +1068,40 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Doomension</h2>
-                                <p class="item-intro text-muted">Jeu sur Unity</p>
+                                <h2 class="text-uppercase">Audisen</h2>
+                                <p class="item-intro text-muted">Création d'une carte électronique et de code C</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/audisen.jpg" alt="..." />
-                                <p>Jeu réalisé dans le cadre de la <b>Wonder Jam de l'Automne 2024</b> par l'équipe des Tea Enjoyers.</p>
-                                    <p><b>Le résumé de notre jeu :</b> Le principe est de survivre aux fantômes appraissant dans l'obscurité en les éclairant contre un autre joueur tout en récupérant des bonus pour handicaper son opposant.
-                                        <br>
-                                    <b>Thème :</b> Dimension.
-                                    <br>
-                                    <b>Styles :</b> Chacun pour soi ; Aide moi mon pote ! ; Maniaque
-                                    <br>
-                                    <b>Styles respectés :</b> Chacun pour soi  & Maniaques 
+                                
+                                <h4><b>Description du projet :</b></h4>
+                                <p>
+                                    Audisen Music Player est un lecteur audio intégrant numérique et analogique pour composer, lire et écouter des mélodies.
+                                    Le système permet de transformer des partitions simplifiées en fichiers spécifiques (.ams), de les regrouper en playlists
+                                    (.amp), et de les exécuter via un microcontrôleur STM32. Grâce à une interface LCD intuitive, les utilisateurs peuvent 
+                                    naviguer entre les morceaux et appliquer des effets audio tels que la distorsion, enrichissant l’expérience d’écoute.
+                                </p>
+                                
+                                <h4><b>Objectifs :</b></h4>
+                                <ul>
+                                    <li>Développer un système capable de lire des fichiers audio .ams et .amp.</li>
+                                    <li>Associer programmation en C, électronique numérique et analogique.</li>
+                                    <li>Offrir une navigation fluide entre les morceaux avec une interface utilisateur simple.</li>
+                                    <li>Maintenir une qualité sonore optimale grâce à des traitements analogiques.</li>
+                                </ul>
                                 
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Github : </strong>
-                                        <a href="https://github.com/Qosip/Audisen"> cliquer ici </a>
+                                        <a href="https://github.com/Qosip/Audisen">Cliquer ici</a>
                                     </li>
                                     <li>
-                                        <i>Nombre de personnes sur le projet</i>
+                                        <i>Nombre de personnes sur le projet :</i>
                                     </li>
                                     <li>
                                         2
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+                                
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -1039,6 +1112,70 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal23" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details -->
+                                <h2 class="text-uppercase">Binpacking</h2>
+                                <p class="item-intro text-muted">Création d'algorithmes en C++</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/binpacking.png" alt="..." />
+                                
+                                <h4><b>Description du projet :</b></h4>
+                                <p>
+                                    Ce projet portait sur l'optimisation logistique dans le cadre de la recherche opérationnelle. 
+                                    L'objectif était de minimiser le nombre de conteneurs nécessaires pour transporter des marchandises dans un train de fret, 
+                                    en utilisant des algorithmes exacts (MILP) et heuristiques. Une application web a été développée pour visualiser les résultats en 2D et 3D.
+                                </p>
+    
+                                <h4><b>Objectifs :</b></h4>
+                                <ul>
+                                    <li>Développer des algorithmes pour réduire le nombre de conteneurs nécessaires.</li>
+                                    <li>Comparer les performances en termes de précision et de rapidité.</li>
+                                    <li>Proposer une visualisation 3D des solutions avec Three.js.</li>
+                                </ul>
+    
+                                <h4><b>Vidéos :</b></h4>
+                                <ul>
+                                    <li>
+                                        <strong>Présentation :</strong> 
+                                        <a href="https://www.youtube.com/watch?v=23vSy-RCbAw&ab_channel=Qosip" target="_blank">Visionner ici</a>
+                                    </li>
+                                    <li>
+                                        <strong>Mode Sandbox :</strong> 
+                                        <a href="https://www.youtube.com/watch?v=WRTpsOXL1LU&ab_channel=Qosip" target="_blank">Visionner ici</a>
+                                    </li>
+                                </ul>
+    
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Github :</strong>
+                                        <a href="https://github.com/KarapiX/Binpacking">Cliquer ici</a>
+                                    </li>
+                                    <li>
+                                        <i>Nombre de personnes sur le projet :</i>
+                                    </li>
+                                    <li>
+                                        3
+                                    </li>
+                                </ul>
+    
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Retour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
