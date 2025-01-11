@@ -11,6 +11,69 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+html{
+ scrollbar-width: none;
+}
+
+
+/* Animation par défaut : caché */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 1.6s ease-out;
+}
+
+/* Animation lorsqu'elle est active */
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation par défaut : caché */
+.animate-text-right {
+    opacity: 0;
+    transform: translateX(1050px);
+    transition: all 1.6s ease-out;
+}
+
+/* Animation lorsqu'elle est active */
+.animate-text-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Style initial : caché et décalé à gauche */
+#services .col-md-3, #services .col-md-6, #services .col-md-2 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+
+/* Style après animation : visible et position normale */
+#services .col-md-3.animate, #services .col-md-6.animate,  #services .col-md-2.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Style initial : caché et décalé à gauche */
+#portfolio .portfolio-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Style après animation : visible et en position normale */
+#portfolio .portfolio-item.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+
+
  :root {
   --success: #00b894;
   --progress: #e17055;

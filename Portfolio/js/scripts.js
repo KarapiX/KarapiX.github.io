@@ -50,5 +50,59 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    
+// Animation logic
+const elementsToAnimate = document.querySelectorAll('.animate-on-scroll, .animate-text-right');
 
+const animateOnScroll = () => {
+    elementsToAnimate.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            element.classList.add('animate');
+        } else {
+            element.classList.remove('animate'); // Optionnel : supprimer si vous voulez une animation unique
+        }
+    });
+};
+
+// Trigger animations on scroll
+document.addEventListener('scroll', animateOnScroll);
+// Trigger animations on page load
+animateOnScroll();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const services = document.querySelectorAll('#services .row.text-center .col-md-3, #services .row.text-center .col-md-6,  #services .row.text-center .col-md-2 ');
+
+    const animateServices = () => {
+        services.forEach((service, index) => {
+            const rect = service.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                setTimeout(() => {
+                    service.classList.add('animate');
+                }, index * 200); // Délai entre chaque animation (200ms par élément)
+            }
+        });
+    };
+
+    document.addEventListener('scroll', animateServices);
+    animateServices(); // Pour les éléments déjà visibles au chargement
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const portfolioItems = document.querySelectorAll('#portfolio .portfolio-item');
+
+    const animatePortfolio = () => {
+        portfolioItems.forEach((item, index) => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                setTimeout(() => {
+                    item.classList.add('animate');
+                }, index * 200); // Délai entre chaque animation (200ms par élément)
+            }
+        });
+    };
+
+    document.addEventListener('scroll', animatePortfolio);
+    animatePortfolio(); // Pour les éléments déjà visibles au chargement
 });
