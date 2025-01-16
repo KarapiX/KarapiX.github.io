@@ -65,7 +65,7 @@
                         style="border-radius: 10%;" alt="..." />
                 </div>
                 <!-- Texte avec animation depuis la droite -->
-                <div class="col-xl-8 col-lg-0 animate-text-right">
+                <div class="col-xl-8 col-lg-0 ">
                     <div class="featured-text text-center text-lg-left">
                         <h4>Présentation</h4>
                         <p class="text-black-50 mb-0">Bonjour! Je m'appelle Romain D'hem, je suis un étudiant en
@@ -557,30 +557,44 @@
         </div>
     </footer>
     <!-- Portfolio Modals-->
-    <!-- Portfolio item 1 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                                <!-- Project details -->
                                 <h2 class="text-uppercase">DodgeBoule</h2>
-                                <p class="item-intro text-muted">Jeu codé en python</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/unknown.png"
-                                    alt="..." />
-                                    
-                                <p>Le but de ce projet était de maîtriser les classes dans python. Pour ce faire nous
-                                    avons réalisé un petit jeu qui reprend les principes de pong ainsi qu'une
-                                    bibliothèque appelée pygame.</p>
-                                    <h3 class="text-uppercase">Démonstation</h3>
-                                    <video controls width="100%">
-                                        <source src="assets/video/dodgeboule.mp4" type="video/mp4">
-                                        Votre navigateur ne supporte pas les vidéos HTML5.
-                                    </video>
+                                <p class="item-intro text-muted">Un jeu développé en Python</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/unknown.png" alt="DodgeBoule image" />
+                                
+                                <h4 >Présentation du projet</h4>
+                                <p>
+                                    DodgeBoule est un projet réalisé dans le cadre d'un apprentissage approfondi des classes en Python. 
+                                    Inspiré des mécanismes de jeux classiques comme Pong.
+                                    Le projet utilise la bibliothèque <b>Pygame</b>, qui facilite la gestion des éléments graphiques 
+                                    et la création de petits jeux.
+                                </p>
+    
+                                <h4 >Principe du jeu</h4>
+                                <p>Le but du jeu est simple, il faut survivre ! Je jeu commence par le fait de controller un carré qui doit éviter les balles qui apparaisse pour le toucher. Plus le temps s'écoule, plus notre score augmente et le nombre de balles également. Le jeu s'arrête dès que je joueur rentre en collision avec une balle.</p>
+
+                                <h4 >Objectifs</h4>
+                                <ul>
+                                    <li>Apprendre et appliquer les concepts de programmation orientée objet (POO) en Python.</li>
+                                    <li>Explorer les fonctionnalités de Pygame pour créer des environnements graphiques et dynamiques.</li>
+                                    <li>Mettre en œuvre des mécanismes de jeu tels que la détection de collisions et la gestion des événements.</li>
+                                </ul>
+    
+    
+    
+                                <h3 class="text-uppercase ">Démonstration</h3>
+                                <video controls width="100%">
+                                    <source src="assets/video/dodgeboule.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas les vidéos HTML5.
+                                </video>
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Github :</strong>
@@ -594,8 +608,8 @@
                                         2
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+    
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -606,6 +620,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Portfolio item 2 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -619,9 +634,10 @@
                                 <h2 class="text-uppercase">Météo de la Crypto</h2>
                                 <p class="item-intro text-muted">Site créé en HTML, CSS, JavaScript</p>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/crypto.png" alt="..." />
-                                <p><b>Description :</b> "Météo de la Crypto" est une plateforme dédiée à l'univers des crypto-monnaies. 
-                                    Elle propose des informations éducatives sur les crypto-monnaies, leur fonctionnement, et offre des outils tels que des graphiques, des formations, et une boutique simulant l'achat de crypto-monnaies.</p>
-                                <p><b>Fonctionnalités principales :</b></p>
+                                <h4>Description :</h4>
+                                <p> "Météo de la Crypto" est une plateforme dédiée à l'univers des crypto-monnaies. 
+                                    Elle propose des informations sur les crypto-monnaies, leur fonctionnement, et offre des outils tels que des graphiques, des formations, et une boutique simulant l'achat de crypto-monnaies.</p>
+                                    <h4>Fonctionnalités principales :</h4>
                                 <ul>
                                     <li>Page d'accueil avec informations et contact.</li>
                                     <li>Articles expliquant l'histoire des crypto-monnaies.</li>
@@ -629,9 +645,10 @@
                                     <li>Graphiques comparant les courbes des monnaies.</li>
                                     <li>Boutique pour convertir et simuler des achats de crypto-monnaies.</li>
                                 </ul>
+                                <!-- <h4>Réflexion personnelle :</h4>
                                 <p>
-                                    <b>Réflexion personnelle :</b> Le projet a permis d'explorer différentes facettes du développement web, notamment les formulaires interactifs, les animations au défilement, et l'adaptation mobile. L'équipe est satisfaite du rendu, malgré des améliorations possibles, comme le design et l'intégration de données en temps réel.
-                                </p>
+                                     Le projet a permis d'explorer différentes facettes du développement web, notamment les formulaires interactifs, les animations au défilement, et l'adaptation mobile.
+                                </p> -->
                                 <p>
                                     <strong>Consultez la documentation complète :</strong> 
                                     <a href="assets/cv/Documentation_technique.pdf" target="_blank">Cliquer ici</a>
@@ -669,21 +686,41 @@
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">Système solaire</h2>
-                                <p class="item-intro text-muted">Site crée en C,HTML,CSS</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.png" alt="..." />
-                                <p> C'est un projet de fin de première année qui consistait à utiliser le format json
-                                    ainsi qu'une méthode calcul de planète et le retranscrire sur un site</p>
-                                    <h3 class="text-uppercase">Démonstation</h3>
-                                <img class="img-fluid d-block mx-auto" src="assets/video/systeme.gif" alt="..." />
-
+                                <!-- Project details -->
+                                <h2 class="text-uppercase">Système Solaire</h2>
+                                <p class="item-intro text-muted">Une simulation réalisée avec C, HTML, et CSS</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.png" alt="Simulation du système solaire" />
+                                
+                                <h4>Présentation du projet</h4>
+                                <p>
+                                    Le projet <b>Système Solaire</b> a été réalisé en fin de première année et visait à modéliser la rotation 
+                                    des planètes autour du Soleil. À partir de calculs précis effectués en langage C, les données ont été 
+                                    traduites en format JSON pour être affichées graphiquement sur un site web interactif.
+                                    Ce projet combine des compétences en programmation et en développement web.
+                                </p>
+    
+                                <h4 >Objectifs</h4>
+                                <ul>
+                                    <li>Appliquer des algorithmes mathématiques pour simuler les mouvements planétaires.</li>
+                                    <li>Exporter les résultats sous un format JSON standard pour une utilisation web.</li>
+                                    <li>Créer une interface graphique simple et claire en HTML et CSS.</li>
+                                </ul>
+    
+                                <h4>Étapes du projet</h4>
+                                <ul>
+                                    <li><b>Calcul des rotations :</b> Les positions des planètes sont calculées point par point en C</li>
+                                    <li><b>Génération de fichiers JSON :</b> Les points générées sont formatées en JSON pour une exploitation simple sur le site.</li>
+                                    <li><b>Visualisation web :</b> Les positions des planètes sont affichées par représentation graphique sur un site </li>
+                                </ul>
+    
+                                <h3 class="text-uppercase">Démonstration</h3>
+                                <img class="img-fluid d-block mx-auto" src="assets/video/systeme.gif" alt="Démonstration du système solaire" />
+    
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Github:</strong>
@@ -696,8 +733,8 @@
                                         2
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+    
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -708,6 +745,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Portfolio item 4 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -748,33 +786,44 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 5 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                                <!-- Project details -->
                                 <h2 class="text-uppercase">Platformer</h2>
-                                <p class="item-intro text-muted">Projet en Qt</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/plateformer.png"
-                                    alt="..." />
-                                <p>Ce projet utilise le Qt afin d'utilise sa partie graphique et de faire un petit jeu
-                                    platformer qui nécéssite de franchir des obstacles avec un personnage pour atteindre
-                                    une arrivée</p>
-                                    <h3 class="text-uppercase">Démonstation</h3>
-                                    <video controls width="100%">
-                                        <source src="assets/video/cbien.mp4" type="video/mp4">
-                                        Votre navigateur ne supporte pas les vidéos HTML5.
-                                    </video>
+                                <p class="item-intro text-muted">Un jeu développé avec Qt</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/plateformer.png" alt="Platformer Screenshot" />
+    
+                                <h4>Présentation du projet</h4>
+                                <p>
+                                    <b>Platformer</b> est un jeu développé en utilisant <b>Qt</b>, un framework graphique. 
+                                    Ce projet met en œuvre la partie graphique de Qt pour créer un jeu de type "platformer" 
+                                    où le joueur contrôle un personnage qui doit franchir des obstacles et atteindre un point d'arrivée. 
+                                    Le projet combine des concepts de développement graphique et des mécaniques de jeu classiques.
+                                </p>
+    
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Explorer les capacités graphiques de Qt pour développer une interface interactive.</li>
+                                    <li>Mettre en œuvre des mécaniques de jeu telles que les sauts, les collisions, et le déplacement.</li>
+                                    <li>Optimiser les animations et les interactions pour une expérience fluide.</li>
+                                </ul>
+    
+                                <h3 class="text-uppercase mt-4">Démonstration</h3>
+                                <video controls width="100%">
+                                    <source src="assets/video/cbien.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas les vidéos HTML5.
+                                </video>
+    
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Github:</strong>
-                                        <a href="https://github.com/KarapiX/Plateformer/"> cliquer ici </a>
+                                        <a href="https://github.com/KarapiX/Plateformer/"> Cliquer ici </a>
 
                                     </li>
                                     <li>
@@ -784,8 +833,8 @@
                                         1
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+    
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -796,24 +845,43 @@
             </div>
         </div>
     </div>
-    <!-- Portfolio item 6 modal popup-->
+    
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                                <!-- Project details -->
                                 <h2 class="text-uppercase">Pile ou Face</h2>
-                                <p class="item-intro text-muted">Site en HTML,CSS,Javascript,Python,SQL</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.png" alt="..." />
-                                <p>Ceci est un projet de Lycée qui demandait d'utiliser python en tant que serveur et
-                                    ainsi géré une base SQL avec une interaction sur un site. On a donc fait un site
-                                    statisque pour faire des pile ou face avec une page de login puis une page de lancer
-                                    + affichage du graphique de pourcentage de victoire </p>
+                                <p class="item-intro text-muted">Un site interactif utilisant HTML, CSS, JavaScript, Python et SQL</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.png" alt="Pile ou Face Screenshot" />
+    
+                                <h4>Présentation du projet</h4>
+                                <p>
+                                    <b>Pile ou Face</b> est un projet réalisé au lycée qui combine le développement web et la gestion 
+                                    de bases de données. L'objectif principal était d'utiliser Python comme serveur pour gérer une base SQL 
+                                    et offrir une interaction dynamique via un site web. Le site permet de simuler des lancers de pièce 
+                                    tout en enregistrant les résultats et en affichant des statistiques de victoire sous forme de graphiques.
+                                </p>
+    
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Apprendre à utiliser Python comme serveur web.</li>
+                                    <li>Implémenter la gestion de bases de données SQL pour stocker et analyser les résultats.</li>
+                                    <li>Créer une interface web statique en HTML, CSS et JavaScript avec des fonctionnalités dynamiques.</li>
+                                    <li>Visualiser les données sous forme de graphiques interactifs.</li>
+                                </ul>
+    
+                                <h4>Fonctionnalités principales</h4>
+                                <ul>
+                                    <li>Page de connexion sécurisée pour accéder au site.</li>
+                                    <li>Simulation de lancers de pièce avec des résultats aléatoires (Pile ou Face).</li>
+                                    <li>Enregistrement des résultats dans une base SQL.</li>
+                                    <li>Affichage des statistiques de victoire via un graphique interactif.</li>
+                                </ul>
                                 <ul class="list-inline">
                                     <li>
                                         <strong>Github:</strong>
@@ -826,8 +894,8 @@
                                         2
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+    
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -838,26 +906,49 @@
             </div>
         </div>
     </div>
+    
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body">
-                                <!-- Project details-->
+                                <!-- Project details -->
                                 <h2 class="text-uppercase">Casse-Briques</h2>
-                                <p class="item-intro text-muted">Jeu sur Unreal engine</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Casse.png" alt="..." />
-                                <p>Ceci est un jeu créé sur Unreal engine reprenant le principe du <i><b>Casse-Briques</b></i>. Le but est de d'utiliser la raquette pour envoyer la
-                                    balle et marquer des points en détruisant des briques. </p>
-                                    <h3 class="text-uppercase">Démonstation</h3>
-                                    <video controls width="100%">
-                                        <source src="assets/video/cassebrique.mp4" type="video/mp4">
-                                        Votre navigateur ne supporte pas les vidéos HTML5.
-                                    </video>
+                                <p class="item-intro text-muted">Un jeu développé sur Unreal Engine</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Casse.png" alt="Casse-Briques Screenshot" />
+    
+                                <h4>Présentation du projet</h4>
+                                <p>
+                                    Mon jeu est une reproduction du jeu d'arcade développé sur le moteur 
+                                    de jeu <b>Unreal Engine</b>. Ce projet reprend les mécaniques classiques du jeu, où le joueur contrôle 
+                                    une raquette pour envoyer une balle et détruire des briques. Le gameplay met l'accent sur la précision 
+                                    et les réflexes pour marquer un maximum de points tout en gardant la balle en jeu.
+                                </p>
+    
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Découvrir les fonctionnalités de base d'Unreal Engine pour développer un jeu 2D.</li>
+                                    <li>Appliquer des concepts de programmation liés à la physique et aux collisions.</li>
+                                    <li>Concevoir une interface utilisateur intuitive pour un jeu.</li>
+                                </ul>
+    
+                                <h4>Fonctionnalités principales</h4>
+                                <ul>
+                                    <li>Contrôle fluide de la raquette avec les touches du clavier.</li>
+                                    <li>Mécanique de rebond pour la balle.</li>
+                                    <li>Système de destruction des briques avec score incrémental.</li>
+                                    <li>Graphismes simples et menus de redirections</li>
+                                </ul>
+    
+                                <h3 class="text-uppercase">Démonstration</h3>
+                                <video controls width="100%">
+                                    <source src="assets/video/cassebrique.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas les vidéos HTML5.
+                                </video>
+    
                                 <ul class="list-inline">
                                     <li>
                                         <i>Nombre de personnes sur le projet</i>
@@ -866,8 +957,8 @@
                                         1
                                     </li>
                                 </ul>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
+    
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                     <i class="fas fa-xmark me-1"></i>
                                     Retour
                                 </button>
@@ -878,6 +969,7 @@
             </div>
         </div>
     </div>
+    
     <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1052,7 +1144,7 @@
                                 <ul>
                                     <li>Chaque joueur possède une arme principale et peut collecter des bonus pour améliorer ses capacités.</li>
                                     <li>Mécaniques de mouvement : dash, saut lunaire, glissade pour éviter les tirs et gagner en mobilité.</li>
-                                    <li>Modification de la carte entre les rounds : ajout ou suppression de murs, pièges et bonus pour plus de stratégie.</li>
+                                    <li>Modification de la carte entre les rounds : ajout ou suppression de murs, pièges et bonus.</li>
                                     <li>Chronomètre pour chaque round, augmentant la tension et la dynamique du jeu.</li>
                                 </ul>
                                 
