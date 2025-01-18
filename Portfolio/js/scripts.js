@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-    
+        
 // Animation logic
 const elementsToAnimate = document.querySelectorAll('.animate-on-scroll, .animate-text-right');
 
@@ -105,4 +105,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('scroll', animatePortfolio);
     animatePortfolio(); // Pour les éléments déjà visibles au chargement
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Sélectionner tous les modals avec vidéos
+    const modals = document.querySelectorAll('.portfolio-modal');
+    
+    modals.forEach(modal => {
+        modal.addEventListener('hidden.bs.modal', () => {
+            const video = modal.querySelector('video');
+            if (video) {
+                video.pause();
+            }
+        });
+    });
 });
